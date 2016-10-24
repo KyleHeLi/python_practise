@@ -1,0 +1,19 @@
+-- VERSION_4
+-- START DISKCACHE_2
+D:\Dropbox\Dropbox\Research direction\python scripts\practise\.metadata\.plugins\org.eclipse.core.resources\.projects\PyTest\com.python.pydev.analysis\v2_indexcache
+com.__init__|1467141226029148000|D:\Dropbox\Dropbox\Research direction\python scripts\practise\PyTest\src\com\__init__.py
+com.hl.hello|1467754544249232000|D:\Dropbox\Dropbox\Research direction\python scripts\practise\PyTest\src\com\hl\hello.py
+com.hl.Test|1467146785131699000|D:\Dropbox\Dropbox\Research direction\python scripts\practise\PyTest\src\com\hl\Test.py
+com.hl.__init__|1467141226034155000|D:\Dropbox\Dropbox\Research direction\python scripts\practise\PyTest\src\com\hl\__init__.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=com.hl.hello
+-- END DICTIONARY
+-- START TREE 1
+1
+__a|1|__author__!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

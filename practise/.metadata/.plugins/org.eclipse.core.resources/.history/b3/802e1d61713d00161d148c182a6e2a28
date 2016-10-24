@@ -1,0 +1,11 @@
+#!/usr/bin/python
+# encoding: utf-8
+# Modulename: com.hl.Test
+
+'''
+Date: 2016-06-28
+
+@author: Kyle
+'''
+
+print "Hello World!"
