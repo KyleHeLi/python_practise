@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #!/usr/bin/env python
 # -*- encoding:utf-8 -*-
 
@@ -40,6 +41,8 @@ if __name__ == '__main__':
 
 	for i in range( 15 ):
 =======
+=======
+>>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
 #!/usr/bin/env python
 # -*- encoding:utf-8 -*-
 
@@ -80,5 +83,8 @@ if __name__ == '__main__':
 	# print test.convert( string, 10 )
 
 	for i in range( 15 ):
+<<<<<<< HEAD
+>>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
+=======
 >>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
 		print test.convert( string, i )

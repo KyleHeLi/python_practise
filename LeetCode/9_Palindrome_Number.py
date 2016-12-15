@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #!/usr/bin/env python
 # -*- encoding:utf-8 -*-
 
@@ -31,6 +32,8 @@ if __name__ == '__main__':
 	print test.isPalindrome( value2 )
 	print test.isPalindrome( value3 )
 =======
+=======
+>>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
 #!/usr/bin/env python
 # -*- encoding:utf-8 -*-
 
@@ -65,5 +68,8 @@ if __name__ == '__main__':
 	print test.isPalindrome( value1 )
 	print test.isPalindrome( value2 )
 	print test.isPalindrome( value3 )
+<<<<<<< HEAD
+>>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
+=======
 >>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
 	print test.isPalindrome( value4 )

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -15,6 +16,8 @@ class Solution(object):
             else:
                 numDict[target - nums[i]] = i
 =======
+=======
+>>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -30,5 +33,8 @@ class Solution(object):
                 return [numDict[nums[i]], i]
             else:
                 numDict[target - nums[i]] = i
+<<<<<<< HEAD
+>>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
+=======
 >>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
         return False

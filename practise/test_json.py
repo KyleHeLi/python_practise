@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #!/usr/bin/env python
 # -*- encoding:utf-8 -*-
 
@@ -38,6 +39,8 @@ if __name__ == '__main__':
 	# afterS = json.loads( beforeS )
 	# print( "After pickling:" )
 =======
+=======
+>>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
 #!/usr/bin/env python
 # -*- encoding:utf-8 -*-
 
@@ -79,5 +82,8 @@ if __name__ == '__main__':
 	# print( "=================" )
 	# afterS = json.loads( beforeS )
 	# print( "After pickling:" )
+<<<<<<< HEAD
+>>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
+=======
 >>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
 	# print afterS

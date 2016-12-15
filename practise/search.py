@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 
@@ -48,6 +49,8 @@ if __name__ == '__main__':
 	else:
 		print( "Please enter parameter like below." )
 =======
+=======
+>>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 
@@ -96,5 +99,8 @@ if __name__ == '__main__':
 		searchFile( sys.argv[1], '.' )
 	else:
 		print( "Please enter parameter like below." )
+<<<<<<< HEAD
+>>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
+=======
 >>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
 		print searchFile.__doc__

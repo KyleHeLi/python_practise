@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #!/usr/bin/env python
 # -*- encoding:utf-8 -*-
 
@@ -72,6 +73,8 @@ if __name__ == '__main__':
 	u = User( id=12345, name='Mike', email='test@test.com', password='13579' )
 	# Save to database
 =======
+=======
+>>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
 #!/usr/bin/env python
 # -*- encoding:utf-8 -*-
 
@@ -144,5 +147,8 @@ if __name__ == '__main__':
 	# Create an instance
 	u = User( id=12345, name='Mike', email='test@test.com', password='13579' )
 	# Save to database
+<<<<<<< HEAD
+>>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
+=======
 >>>>>>> 221a1bab85b6aa034f6b0658e5364eedd8183a33
 	u.save()
