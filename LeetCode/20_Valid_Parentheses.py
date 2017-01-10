@@ -21,11 +21,12 @@ class Solution(object):
                     return False
                 else:
                 	del stackLeftBrackets[-1]
-
-        if stackLeftBrackets:
-            return False
-        else:
-            return True
+                    
+        return stackLeftBrackets == []
+        # if stackLeftBrackets:
+        #     return False
+        # else:
+        #     return True
 
 def main():
     # True
