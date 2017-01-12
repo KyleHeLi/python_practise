@@ -59,10 +59,12 @@ class Solution(object):
             if !root.isVisited:
                 parentPos = curPos
                 if root.getParent().getVal() != 0:
-                    temp += "->" + (str) root.getVal()
-                    root.setParent(parentPos)
+                    temp += "->" + (str) root.getVal()  
+                    root.setParent(parentPos)       
                 else:
                     temp += (str) root.getVal()
+            else:
+                root.setParent(parentPos)
             curPos = root
             curPos.setVisited()  
             if curPos.getLeft():
