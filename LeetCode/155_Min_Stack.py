@@ -47,7 +47,6 @@ def main():
     minStack.push(-2)
     minStack.push(0)
     minStack.push(-3)
-    minStack.push(-1)
     # Returns -3
     print minStack.getMin()
     minStack.pop()

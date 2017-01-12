@@ -44,7 +44,7 @@ class Solution(object):
     # @param {TreeNode} root
     # @return {string[]}
     parentPos = TreeNode(0)
-    # curPos = TreeNode(0)
+    curPos = TreeNode(0)
     path = []
     temp = ""
     rightChildFlag = False
@@ -56,55 +56,42 @@ class Solution(object):
         if !root:
             return None
         else:
-            if root.getParent().getVal() != 0:
-                temp += "->" + (str) root.getVal()
-                root.setParent(parentPos)
-            else:
-                temp += (str) root.getVal()
-            if root.getLeft():
+            if !root.isVisited:
+                parentPos = curPos
+                if root.getParent().getVal() != 0:
+                    temp += "->" + (str) root.getVal()
+                    root.setParent(parentPos)
+                else:
+                    temp += (str) root.getVal()
+            curPos = root
+            curPos.setVisited()  
+            if curPos.getLeft():
                 rightChildFlag = False
-                binaryTreePaths(root.getLeft())
-            elif root.getRight():
+                binaryTreePaths(curPos.getLeft())
+            elif curPos.getRight():
                 rightChildFlag = True
-                binaryTreePaths(root.getRight())
+                binaryTreePaths(curPos.getRight())
             else:
                 path.append(temp)
                 if rightChildFlag:                    
-                    temp = temp[0:len(temp)-2*len("->")-len((str)root.getVal())-len(str)root.]
-                    binaryTreePaths(root.getLeft().getParent())
+                    temp = temp[0:len(temp)-2*len("->")-len((str)curPos.getVal())-len((str)curPos.getParent().getVal())]
+                    binaryTreePaths(curPos.getParent().getParent())
                 else:
-                    temp = temp[]
-                    binaryTreePaths(root.getParent()) 
-            root.setVisited()
-            parentPos = root   
-                
+                    temp = temp[0:len(temp)-len("->")-len((str)curPos.getVal())]
+                    binaryTreePaths(curPos.getParent()) 
 
-
-
-        # if !root:
-        #     return None
-        # else:
-        #     if !root.isVisited():
-        #         grandParentPos = parentPos
-        #         parentPos = curPos
-        #     curPos = root
-        #     if curPos == self.root:
-        #         temp += (str) curPos.getVal()
-        #     else:
-        #         temp += "->" + (str) curPos.getVal()
-        #     if curPos.getLeft():
-        #         rightChildFlag = False
-        #         binaryTreePaths(curPos.getLeft())
-        #     elif curPos.getRight():
-        #         rightChildFlag = True
-        #         binaryTreePaths(curPos.getRight())
-        #     else:
-        #         if rightChildFlag:
-        #             path.append(temp)
-        #             binaryTreePaths(grandParentPos)
-        #         else:
-        #             binaryTreePaths(ParentPos) 
-        #     curPos.setVisited()
+        # if !root:     return None else:     if !root.isVisited():
+        # grandParentPos = parentPos         parentPos = curPos
+        # curPos = root     if curPos == self.root:         temp +=
+        # (str) curPos.getVal()     else:         temp += "->" + (str)
+        # curPos.getVal()     if curPos.getLeft():
+        # rightChildFlag = False
+        # binaryTreePaths(curPos.getLeft())     elif
+        # curPos.getRight():         rightChildFlag = True
+        # binaryTreePaths(curPos.getRight())     else:         if
+        # rightChildFlag:             path.append(temp)
+        # binaryTreePaths(grandParentPos)         else:
+        # binaryTreePaths(ParentPos)      curPos.setVisited()
 
 
 
