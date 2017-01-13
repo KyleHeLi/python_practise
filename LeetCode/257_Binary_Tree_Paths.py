@@ -61,9 +61,9 @@ class Solution(object):
         if not root:
             return None
         else:
-            if not root.isVisited:
+            if not root.isVisited():
                 self.parentPos = self.curPos
-                if root.getParent().getVal() != 0:
+                if not root.getParent():
                     self.temp += "->" + str(root.getVal())  
                     root.setParent(self.parentPos)       
                 else:
@@ -137,6 +137,7 @@ def main():
     treeRoot.setRight(node12)
     node11.setRight(node22)
 
+    import pdb; pdb.set_trace()  # breakpoint a74e6d70 //
     test = Solution(treeRoot)
     print test.binaryTreePaths(treeRoot)
 
