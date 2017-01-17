@@ -69,23 +69,33 @@ class Solution(object):
                 else:
                     self.temp += str(root.getVal())
             else:
-                root.setParent(self.parentPos)
+                # root.setParent(self.parentPos)
+                if root.getRight().isVisited():
+                    
             self.curPos = root
             self.curPos.setVisited()  
             if self.curPos.getLeft():
                 self.rightChildFlag = False
-                self.binaryTreePaths(self.curPos.getLeft())
+                if not self.curPos.getLeft().isVisited():
+                    self.binaryTreePaths(self.curPos.getLeft())
+                else:
+                    self.binaryTreePaths(self.curPos.getParent())
             elif self.curPos.getRight():
                 self.rightChildFlag = True
-                self.binaryTreePaths(self.curPos.getRight())
+                if not self.curPos.getRight().isVisited():
+                    self.binaryTreePaths(self.curPos.getRight())
+                else:
+                    self.binaryTreePaths(self.curPos.getParent().getParent())
             else:
                 self.path.append(self.temp)
+                print self.path
                 if self.rightChildFlag:                    
                     self.temp = self.temp[0:len(self.temp)-2*len("->")-len(str(self.curPos.getVal()))-len(str(self.curPos.getParent().getVal()))]
                     self.binaryTreePaths(self.curPos.getParent().getParent())
                 else:
                     self.temp = self.temp[0:len(self.temp)-len("->")-len(str(self.curPos.getVal()))]
                     self.binaryTreePaths(self.curPos.getParent()) 
+
                 # if self.parentPos.getLeft().isVisited():
                 #     return self.path
                 # else:
