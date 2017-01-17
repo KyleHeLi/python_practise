@@ -56,10 +56,11 @@ class Solution(object):
         self.path = []
         self.temp = ""
         self.rightChildFlag = False
+        self.count = 0
 
     def binaryTreePaths(self, root):
         if not root:
-            return None
+            return self.path
         else:
             if not root.isVisited():
                 self.parentPos = self.curPos
@@ -68,24 +69,32 @@ class Solution(object):
                     root.setParent(self.parentPos)       
                 else:
                     self.temp += str(root.getVal())
-            else:
-                root.setParent(self.parentPos)
+            elif root.getRight() and root.getRight().isVisited():
+                if root.getParent().getVal() == 0:
+                    self.count += 1
+                if self.count < 2:
+                    return self.binaryTreePaths(self.root)
+                else:
+                    return self.path
             self.curPos = root
             self.curPos.setVisited()  
-            if self.curPos.getLeft():
+            if self.curPos.getLeft() and not self.curPos.getLeft().isVisited():
                 self.rightChildFlag = False
-                self.binaryTreePaths(self.curPos.getLeft())
-            elif self.curPos.getRight():
+                return self.binaryTreePaths(self.curPos.getLeft())
+            elif self.curPos.getRight() and not self.curPos.getRight().isVisited():
                 self.rightChildFlag = True
-                self.binaryTreePaths(self.curPos.getRight())
+                return self.binaryTreePaths(self.curPos.getRight())
             else:
                 self.path.append(self.temp)
                 if self.rightChildFlag:                    
                     self.temp = self.temp[0:len(self.temp)-2*len("->")-len(str(self.curPos.getVal()))-len(str(self.curPos.getParent().getVal()))]
-                    self.binaryTreePaths(self.curPos.getParent().getParent())
+                    if self.curPos.getParent().getParent() and self.curPos.getParent().getParent().getVal() != 0:
+                        return self.binaryTreePaths(self.curPos.getParent().getParent())
+                    else:
+                        self.binaryTreePaths(self.root)
                 else:
                     self.temp = self.temp[0:len(self.temp)-len("->")-len(str(self.curPos.getVal()))]
-                    self.binaryTreePaths(self.curPos.getParent()) 
+                    return self.binaryTreePaths(self.curPos.getParent()) 
                 # if self.parentPos.getLeft().isVisited():
                 #     return self.path
                 # else:
@@ -137,8 +146,8 @@ def main():
     treeRoot.setRight(node12)
     node11.setRight(node22)
 
-    import pdb; pdb.set_trace()  # breakpoint a74e6d70 //
     test = Solution(treeRoot)
+    import pdb; pdb.set_trace()  # breakpoint b7d83e47 //
     print test.binaryTreePaths(treeRoot)
 
 
