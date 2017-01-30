@@ -4,6 +4,7 @@
 
 class Solution(object):
 
+    # Own solution
     def searchMatrix(self, matrix, target):
         """
         :type matrix: List[List[int]]
@@ -23,6 +24,24 @@ class Solution(object):
                         break
         return False
 
+    # Top solution
+    def searchMatrix1(self, matrix, target):
+        """
+        :type matrix: List[List[int]]
+        :type target: int
+        :rtype: bool
+        """
+        if matrix:
+            m, n, r, c = len(matrix), len(matrix[0]), 0, len(matrix[0]) - 1
+            while r < m and c >= 0:
+                if not matrix[r] or matrix[r][c] < target:
+                    r += 1
+                elif matrix[r][c] == target:
+                    return True
+                else:
+                    c -= 1
+        return False
+
 
 def main():
     testMatrix = [
@@ -34,8 +53,8 @@ def main():
         []
     ]
     test = Solution()
-    print test.searchMatrix(testMatrix, 5)
-    print test.searchMatrix(testMatrix, 20)
+    print test.searchMatrix1(testMatrix, 5)
+    print test.searchMatrix1(testMatrix, 20)
 
 
 if __name__ == '__main__':
