@@ -111,7 +111,7 @@ def main():
     treeRoot.right.right.left.right.right.right = TreeNode(16)
     
     test = Solution()
-    print test.binaryTreePaths1(treeRoot)
+    print(test.binaryTreePaths1(treeRoot))
 
 
 if __name__ == '__main__':

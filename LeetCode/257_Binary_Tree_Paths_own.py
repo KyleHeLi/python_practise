@@ -184,7 +184,7 @@ def main():
 
 
     test = Solution(treeRoot)
-    print test.binaryTreePaths(treeRoot)
+    print(test.binaryTreePaths(treeRoot))
 
 
 if __name__ == '__main__':

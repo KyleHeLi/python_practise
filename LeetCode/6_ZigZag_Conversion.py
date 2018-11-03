@@ -39,4 +39,4 @@ if __name__ == '__main__':
     # print test.convert( string, 10 )
 
     for i in range(15):
-        print test.convert(string, i)
+        print(test.convert(string, i))

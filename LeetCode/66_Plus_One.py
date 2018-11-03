@@ -44,15 +44,15 @@ def main():
     numList9 = [-1]
 
     test = Solution()
-    print test.plusOne(numList1)
-    print test.plusOne(numList2)
-    print test.plusOne(numList3)
-    print test.plusOne(numList4)
-    print test.plusOne(numList5)
-    print test.plusOne(numList6)
-    print test.plusOne(numList7)
-    print test.plusOne(numList8)
-    print test.plusOne(numList9)
+    print(test.plusOne(numList1))
+    print(test.plusOne(numList2))
+    print(test.plusOne(numList3))
+    print(test.plusOne(numList4))
+    print(test.plusOne(numList5))
+    print(test.plusOne(numList6))
+    print(test.plusOne(numList7))
+    print(test.plusOne(numList8))
+    print(test.plusOne(numList9))
 
 
 if __name__ == '__main__':

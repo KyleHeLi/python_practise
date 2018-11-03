@@ -30,7 +30,7 @@ def main():
     ]
     target = 51
     test = Solution()
-    print test.searchMatrix(testMatrix, target)
+    print(test.searchMatrix(testMatrix, target))
 
 
 if __name__ == '__main__':

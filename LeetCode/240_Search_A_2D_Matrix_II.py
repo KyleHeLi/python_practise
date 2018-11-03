@@ -53,8 +53,8 @@ def main():
         []
     ]
     test = Solution()
-    print test.searchMatrix1(testMatrix, 5)
-    print test.searchMatrix1(testMatrix, 20)
+    print(test.searchMatrix1(testMatrix, 5))
+    print(test.searchMatrix1(testMatrix, 20))
 
 
 if __name__ == '__main__':

@@ -26,7 +26,7 @@ if __name__ == '__main__':
 	value4 = -12321
 	
 	test = Solution()
-	print test.isPalindrome( value1 )
-	print test.isPalindrome( value2 )
-	print test.isPalindrome( value3 )
-	print test.isPalindrome( value4 )
+	print(test.isPalindrome( value1 ))
+	print(test.isPalindrome( value2 ))
+	print(test.isPalindrome( value3 ))
+	print(test.isPalindrome( value4 ))

@@ -48,12 +48,12 @@ def main():
     minStack.push(0)
     minStack.push(-3)
     # Returns -3
-    print minStack.getMin()
+    print(minStack.getMin())
     minStack.pop()
     # Returns 0
-    print minStack.top()
+    print(minStack.top())
     # Returns -2
-    print minStack.getMin()
+    print(minStack.getMin())
 
 
 if __name__ == '__main__':

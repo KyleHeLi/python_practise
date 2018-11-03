@@ -48,15 +48,15 @@ def main():
     testDict2 = ['good']
     test = Solution()
 
-    print test.wordBreak(testStr0, testDict0)
+    print(test.wordBreak(testStr0, testDict0))
     print("================")
-    print test.wordBreak(testStr, testDict)
-    print test.wordBreak(testStr2, testDict)
-    print test.wordBreak(testStr3, testDict)
+    print(test.wordBreak(testStr, testDict))
+    print(test.wordBreak(testStr2, testDict))
+    print(test.wordBreak(testStr3, testDict))
     print("================")
-    print test.wordBreak(testStr, testDict2)
-    print test.wordBreak(testStr2, testDict2)
-    print test.wordBreak(testStr3, testDict2)
+    print(test.wordBreak(testStr, testDict2))
+    print(test.wordBreak(testStr2, testDict2))
+    print(test.wordBreak(testStr3, testDict2))
 
 
 if __name__ == '__main__':

@@ -25,7 +25,7 @@ class Solution(object):
 
         xLen = len(xList)
 
-        for i in range(xLen / 2):
+        for i in range(xLen // 2):
             xList[i], xList[-(i + 1)] = xList[-(i + 1)], xList[i]
 
         if x >= 0:
@@ -47,8 +47,8 @@ if __name__ == '__main__':
     value4 = 10000
     value = 0
     test = Solution()
-    print test.reverse(value1)
-    print test.reverse(value2)
-    print test.reverse(value3)
-    print test.reverse(value4)
-    print test.reverse(value)
+    print(test.reverse(value1))
+    print(test.reverse(value2))
+    print(test.reverse(value3))
+    print(test.reverse(value4))
+    print(test.reverse(value))

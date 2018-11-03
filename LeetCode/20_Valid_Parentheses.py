@@ -42,12 +42,12 @@ def main():
     # False
     s6 = "((({[]}))"
     test = Solution()
-    print test.isValid(s1)
-    print test.isValid(s2)
-    print test.isValid(s3)
-    print test.isValid(s4)
-    print test.isValid(s5)
-    print test.isValid(s6)
+    print(test.isValid(s1))
+    print(test.isValid(s2))
+    print(test.isValid(s3))
+    print(test.isValid(s4))
+    print(test.isValid(s5))
+    print(test.isValid(s6))
 
 
 if __name__ == '__main__':
